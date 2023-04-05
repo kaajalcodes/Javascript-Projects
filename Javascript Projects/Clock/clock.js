@@ -1,0 +1,13 @@
+let date = document.getElementById("date");
+let day = document.getElementById("day");
+let time = document.getElementById("time");
+let newDate = new Date();
+let daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+let newDay = daysOfWeek[newDate.getDay()];
+let todaySDate = newDate.getDate();
+let hours = newDate.getHours();
+let minutes = newDate.getMinutes();
+let seconds = newDate.getSeconds();
+date.innerHTML = " " + todaySDate;
+day.innerHTML = newDay
+time.innerHTML = hours + " : " + minutes + " : " + seconds;
